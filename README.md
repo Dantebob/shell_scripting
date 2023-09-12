@@ -56,15 +56,15 @@ IF you don't know how to use terminal, don't have a github account, or don't kno
 
 # Completing the exercise
 
-Your goal in this exercise is to (1) summarize the number of fasta files in a directory, (2) summarize data from a DNA sequence alignment, and (3) create a directory for each sample containing the DNA sequence and amino acid sequence. You must have a shell script written in bash that calls two python scripts. You will draw from computer science skills you have learned in classes up to this point (e.g., storing information in collections, performing simple calculations). Each of these objectives is broken up below.
+Your goal in this exercise is to (1) summarize the number of fasta files in a directory, (2) summarize data from fasta files, and (3) create a directory that contains fasta file for each sequence from all fasta files. You must have a shell script written in bash that calls two python scripts. You will draw from computer science skills you have learned in classes up to this point. Each of these objectives is broken up below.
 
 > note: This readme contains several code blocks. Blocks with a ```$``` prompt refer to command that can be executed using bash (or generally other shell languages). Blocks with a ```>>>``` prompt refer to python code. Blocks without a prompt refer to content within a text file.
 
 ## Summarize the number of fasta files in a directory
 You should create a script that determines the total number of fasta files within a directory. Some of these files will be directly within the provided directory, while others might be nested within directories within the provided directory. Your output should include a file called "log.txt" that provides the total number of fasta files.
 
-## Summarize data from a DNA sequence alignment
-You should create a script that will process a DNA sequence alignment in fasta format. This script should output information to "log.txt" that contains (1) the total number of sequences and (2) the total number of base pairs.
+## Summarize data from a fasta file
+You should create a script that will process a fasta file. This script should output information to "log.txt" that contains (1) the total number of sequences and (2) the total number of base pairs.
 
 
 #### What is a FASTA file?
@@ -95,15 +95,15 @@ You should create a script that creates a fasta file for each individual sequenc
 
 # Final product
 #### What you started with
-1. A DNA sequence alignment in fasta format
+1. A directory (which will contain a number of fasta files and directories)
 #### What you end with
-1. A text file called ```log.txt``` with (1) the total number of fasta files and (2) the total number of sequences.
+1. A text file called ```log.txt``` with (1) the total number of fasta files, (2) the total number of sequences, and (3) the total number of bases across all fasta files.
 1. A directory called ```individual_fastas``` that contains a fasta file for each individual sequence (where the title of the file comes from the sequence header and the file is of type ```.fasta```.
 #### Requirements
 You must have a shell script that is written in bash and two python files that the bash script calls.
 
 # Final recommendations
-Use ExampleAlignments as a test directory with test files- but this will not be the file that will be used to test your script. I would draw out your approach using pseudocode before you start coding. What are the primary tasks you need to address? What kind of script will you write to address that task? You got this!
+Use ExampleAlignments as a test directory with test files- but this will not be the directory that will be used to test your script. I would draw out your approach using pseudocode before you start coding. What are the primary tasks you need to address? What kind of script will you write to address that task? You got this!
 
 
 
